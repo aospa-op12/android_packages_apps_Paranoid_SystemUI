@@ -29,8 +29,6 @@ import com.android.systemui.statusbar.NotificationInsetsModule;
 import com.android.systemui.statusbar.QsFrameTranslateModule;
 import com.android.systemui.unfold.SysUIUnfoldModule;
 
-import co.aospa.systemui.keyguard.ParanoidKeyguardSliceProvider;
-
 import dagger.Subcomponent;
 
 /**
@@ -57,9 +55,4 @@ public interface ParanoidSysUIComponent extends SysUIComponent {
      * Member injection into the supplied argument.
      */
     void inject(CustomizationProvider customizationProvider);
-
-    /**
-     * Member injection into the supplied argument.
-     */
-    void inject(ParanoidKeyguardSliceProvider keyguardSliceProvider);
 }
